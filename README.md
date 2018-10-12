@@ -1,7 +1,12 @@
 # Avatar
 
-Personal avatar.
+Personal avatar for online profiles.
 
-# Attribution
+### Attribution
 
 Original design from [avataaars-geneator](https://github.com/fangpenlin/avataaars-geneator)
+
+---
+<p align="center">
+    <img src="avatar.png"/>
+</p>
