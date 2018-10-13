@@ -8,5 +8,5 @@ Original design from [avataaars-geneator](https://github.com/fangpenlin/avataaar
 
 ---
 <p align="center">
-    <img src="avatar.png"/>
+    <img src="avatar.svg"/>
 </p>
