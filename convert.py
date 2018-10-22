@@ -9,17 +9,12 @@ import cairo
 FILENAME_BASE = "avatar"
 INPUT_FILE = FILENAME_BASE + ".svg"
 
-# Because we're not a perfect square. Use ratio to get height for whatever
-# size we want (height/width).
-SIZE_RATIO = 280/264
-
 def convert(size):
-    img = cairo.ImageSurface(cairo.FORMAT_ARGB32, size, int(size * SIZE_RATIO))
+    img = cairo.ImageSurface(cairo.FORMAT_ARGB32, size, size)
     ctx = cairo.Context(img)
 
     # Scale the SVG to the new size
-    scale_ratio = size/264
-    ctx.scale(scale_ratio, scale_ratio)
+    ctx.scale(size/512, size/512)
 
     handle = Rsvg.Handle()
     svg = handle.new_from_file(INPUT_FILE)
