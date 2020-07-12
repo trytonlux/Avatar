@@ -2,6 +2,7 @@
 
 check_rsvg()
 {
+    # shellcheck disable=SC2039
     if ! type "rsvg-convert" &> /dev/null; then
         echo "missing dependency: librsvg"
         exit
