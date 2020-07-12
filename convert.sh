@@ -2,7 +2,7 @@
 
 check_rsvg()
 {
-    if ! type "rsvg-convert" > /dev/null; then
+    if ! type "rsvg-convert" &> /dev/null; then
         echo "missing dependency: librsvg"
         exit
     fi
