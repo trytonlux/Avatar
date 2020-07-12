@@ -2,6 +2,18 @@
 
 Personal avatar for online profiles.
 
-### Attribution
+Run `convert.sh` to export to PNGs.
 
-Original design from [avataaars-geneator](https://github.com/fangpenlin/avataaars-geneator)
+`convert.sh` depends on `librsvg`
+
+### Arch Linux
+
+`# pacman -S librsvg`
+
+### Fedora
+
+`# dnf install librsvg2-tools`
+
+### Ubuntu/Debian
+
+`# apt install librsvg2-bin`
